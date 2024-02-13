@@ -1,0 +1,140 @@
+footer {
+    background: #219855;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 350px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+
+.bgFoot {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    height: auto;
+}
+.bgFoot img {
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(0%) invert() opacity(0.1);
+    transform: rotate(195deg) scale(1.2);
+}
+
+.footLinks {
+    height: auto;
+    width: 60%;
+    /* background: #ccc; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.footLinks ul {
+    padding-top: 50px;
+    width: auto;
+    font-weight: 600;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    min-width: 250px;
+    color: white;
+}
+
+.footLinks ul li {
+    margin-top: 10px;
+    list-style: none;
+    line-height: 1.8em;
+    font-weight: 400;
+    font-size: 15px;
+    transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.footLinks ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footLinks ul li:hover,
+.footLinks ul li:hover a {
+    color: #fff;
+    opacity: .5;
+    transform: translateY(-5px);
+}
+
+.footLinks ul li a i {
+    font-size: 1.2em;
+}
+
+.sosmedLinks 
+{
+    margin-top: 20px;
+    height: auto;
+    width: 60%;
+    /* background: crimson; */
+    border-top: 1px solid #ccc;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    flex-direction: column;
+}
+.logoFooter
+{
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    margin-bottom: 10px;
+    pointer-events: none;
+    user-select: none;
+}
+.logoFooter img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.boxSosmedFooter
+{
+    width: 280px;
+    height: 50px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.boxSosmedFooter li
+{
+    list-style: none;
+    font-size: 25px;
+}
+.boxSosmedFooter li a
+{
+    color: #ffae0c;
+    transition: .5s;
+}
+.boxSosmedFooter li a:hover
+{
+    opacity: .5;
+}
+
+.sosmedLinks span 
+{
+    font-size: 12px;
+    color: #333;
+    padding-bottom: 10px;
+}

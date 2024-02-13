@@ -1,0 +1,199 @@
+.contact-us {
+    margin-top: 170px;
+    height: 120vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-us h2 {
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Form */
+#wrap {
+    width: 530px;
+    margin: 20px auto 0;
+}
+
+#titleForm {
+    font-size: 24px;
+}
+
+#form-wrap {
+    overflow: hidden;
+    height: 447px;
+    position: relative;
+    top: 0;
+    transition: all 1s ease-in-out .3s;
+}
+
+#form-wrap:before {
+    content: "";
+    position: absolute;
+    bottom: 128px;
+    left: 0;
+    background: url('before_mail.png');
+    width: 530px;
+    height: 317px;
+}
+
+#form-wrap:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: url('after_mail.png');
+    width: 530px;
+    height: 259px;
+}
+
+#form-wrap.hide::after,
+#form-wrap.hide::before {
+    display: none;
+}
+
+#form-wrap:hover {
+    height: 777px;
+    top: -200px;
+}
+
+.formBody {
+    background: white;
+    position: relative;
+    top: 200px;
+    overflow: hidden;
+    height: 200px;
+    width: 420px;
+    margin: 0px auto;
+    padding: 20px;
+    transition: all 1s ease-in-out .3s;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#form-wrap:hover .formBody {
+    height: 530px;
+}
+
+#labelForm {
+    margin: 11px 20px 0 0;
+    font-size: 15px;
+    color: gray;
+}
+
+#inputForm[type=text],
+#texareaForm {
+    font: 14px normal uppercase, arial, serif;
+    color: dimgray;
+    background: none;
+    width: 380px;
+    height: 37px;
+    padding: 0px 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid #f8f5f1;
+    border-radius: 5px;
+}
+
+#texareaForm {
+    height: 80px;
+    padding-top: 14px;
+}
+
+#texareaForm:focus,
+#inputForm[type=text]:focus {
+    background: white;
+}
+
+#form-wrap #inputForm[type=submit] {
+    position: relative;
+    border-radius: 3px;
+    font-family: tahoma;
+    font-size: 24px;
+    color: gray;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.7s ease-in-out 0s;
+}
+
+#form-wrap:hover #inputForm[type=submit] {
+    z-index: 1;
+    opacity: 1;
+    color: #ffae0c;
+    transition: opacity 0.5s ease-in-out 1.3s;
+}
+
+
+/* WAVE */
+.bgImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('http://m.gettywallpapers.com/wp-content/uploads/2023/09/Naruto-Laptop-Wallpaper-1536x864.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #00000019;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 15vh;
+    /* margin-bottom: -7px; */
+    min-height: 100px;
+    max-height: 150px;
+}
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+    transition: .3s ease-in-out;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+}
