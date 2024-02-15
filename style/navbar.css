@@ -29,7 +29,6 @@
     width: 50px;
     height: 50px;
     border-radius: 100px;
-
 }
 
 .imgBox .img img {
@@ -74,4 +73,11 @@
 
 .navLinks li:hover {
     transform: translateY(-5px);
+}
+
+.kegiatanBoxLink
+{
+    border-radius: 5px;
+    padding: 5px;
+    transition: .5s;
 }

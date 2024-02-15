@@ -1,5 +1,169 @@
-.bodyContainer-kegiatan
-{
+.bodyContainer-kegiatan {
     background: #000;
-    height: 100vh;
+    height: 80px;
+}
+
+.headerBody {
+    height: 80vh;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerTextBox {
+    margin-top: 100px;
+    width: 80%;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.headerTextBox h1 {
+    font-size: 3em;
+}
+
+.headerTextBox p {
+    line-height: 2em;
+}
+
+.searchBody {
+    margin-top: 50px;
+    width: 35%;
+    height: 15%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputForm {
+    width: 70%;
+    height: 70%;
+    /* background: #fff; */
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 2px solid #333;
+    overflow: hidden;
+}
+
+.inputForm input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0 10px 0 10px;
+}
+
+.iconSearch {
+    width: 25%;
+    height: 70%;
+    border-radius: 10px;
+    background: #ffae0c;
+}
+
+.iconSearch input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-weight: 600;
+}
+
+/*  */
+.kegiatanBody {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+
+}
+
+.kegiatanCardBody {
+    background: #e6e6e6;
+    width: 90vw;
+    border-radius: 20px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.kegiatanCardBody a {
+    text-decoration: none;
+}
+
+.boxCard {
+    width: 350px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+    border: 3px solid #fff;
+    margin: 5px;
+}
+
+.boxCard:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 3px solid #ffae0c;
+}
+
+.imgBoxCard {
+    width: 100%;
+    height: calc(100% - 35%);
+}
+
+.imgBoxCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teksBoxCard {
+    width: 100%;
+    height: calc(100% - 65%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.teksBoxCard span:nth-child(1) {
+    font-weight: 600;
+    color: #333;
+}
+
+.teksBoxCard span:nth-child(2) {
+    font-style: italic;
+    color: #219855;
+    font-weight: 500;
+}
+
+.teksBoxCard span:nth-child(3) {
+    color: #333;
+}
+
+.distance {
+    height: 300px;
+    width: 100%;
+    position: relative;
 }

@@ -1,0 +1,90 @@
+.aboutBody {
+    margin-top: 50px;
+    height: 100vh;
+    background: #219855;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageBoxAbout {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBoxAbout {
+    width: 90%;
+    height: 70%;
+    background: #eee;
+    position: relative;
+}
+
+.imgBoxAbout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 6px solid white;
+    transform: rotate(-3deg);
+    position: absolute;
+    transition: .8s ease-in-out;
+}
+
+.imgBoxAbout img:not(.active) {
+    opacity: 0;
+}
+
+.textBoxAbout {
+    width: 30%;
+    height: 80%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+#hidden {
+    color: #219855;
+}
+
+.walkText {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    animation: walk 40s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+.walkText ul:nth-child(1) li {
+    width: 150px;
+}
+
+.walkText ul:nth-child(1) {
+    font-weight: 600;
+}
+
+.walkText ul:nth-child(2) li:nth-child(1) {
+    font-weight: 600;
+}
+
+.walkText ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+@keyframes walk {
+    0% {
+        transform: translateY(40%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}

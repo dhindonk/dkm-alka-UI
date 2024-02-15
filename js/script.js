@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () { // Menunggu konten halaman dimuat
     setTimeout(() => {
         document.getElementById('splash').classList.toggle('fade');
-    }, 2000);
+    }, 800);
 });
 
 // Cursor
@@ -16,7 +16,6 @@ window.addEventListener("mousemove", function (e) {
     cursorDot.style.top = posY + 'px';
     cursorDot.style.zIndex = '1000000';
     cursorOutline.style.zIndex = '1000000';
-
 
     cursorOutline.animate({
         left: posX + 'px',
@@ -44,7 +43,6 @@ let line = document.querySelector(".timeline");
 let arrowLeft = document.querySelectorAll(".left-container-arrow");
 let arrowRight = document.querySelectorAll(".right-container-arrow");
 
-
 window.addEventListener('scroll', function () {
     var value = window.scrollY;
 
@@ -69,6 +67,8 @@ window.addEventListener('scroll', function () {
         navbar_custom.style.height = '70px';
         navbar_custom.style.boxShadow = ' rgba(149, 157, 165, 0.2) 0px 8px 24px';
         navbar_custom.style.zIndex = '100';
+        document.querySelector('.kegiatanBoxLink').style.border = '2px solid #219855';
+        document.querySelector('.kegiatanBoxLink').style.background = 'white';
         navLinks.forEach(function (a) {
             a.style.color = '#34B96E';
         });
@@ -79,6 +79,8 @@ window.addEventListener('scroll', function () {
         navbar_custom.style.height = '80px';
         navbar_custom.style.backdropFilter = 'blur(2px)';
         navbar_custom.style.background = 'transparent';
+        document.querySelector('.kegiatanBoxLink').style.border = '2px solid white';
+        document.querySelector('.kegiatanBoxLink').style.background = '#ffae0c';
         navLinks.forEach(function (a) {
             a.style.color = '#fff';
         });
@@ -102,6 +104,7 @@ window.addEventListener('scroll', function () {
         boxTextP.forEach(function (a) {
             a.style.color = '#fff';
         });
+
         line.style.setProperty('--line-background-color', '#219855');
 
         arrowLeft.forEach(function (a) {
@@ -182,4 +185,45 @@ document.addEventListener("DOMContentLoaded", function () {
     showContainers();
 });
 
-// 
+
+
+
+// Carrosel
+let slider = document.querySelector('.slider .list');
+let items = document.querySelectorAll('.slider .list .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let dots = document.querySelectorAll('.slider .dots li');
+
+let lengthItems = items.length - 1;
+let active = 0;
+next.onclick = function () {
+    active = active + 1 <= lengthItems ? active + 1 : 0;
+    reloadSlider();
+}
+prev.onclick = function () {
+    active = active - 1 >= 0 ? active - 1 : lengthItems;
+    reloadSlider();
+}
+let refreshInterval = setInterval(() => { next.click() }, 8000);
+function reloadSlider() {
+    slider.style.left = -items[active].offsetLeft + 'px';
+    // 
+    let last_active_dot = document.querySelector('.slider .dots li.active');
+    last_active_dot.classList.remove('active');
+    dots[active].classList.add('active');
+
+    clearInterval(refreshInterval);
+    refreshInterval = setInterval(() => { next.click() }, 8000);
+}
+dots.forEach((li, key) => {
+    li.addEventListener('click', () => {
+        active = key;
+        reloadSlider();
+    })
+})
+window.onresize = function (event) {
+    reloadSlider();
+};
+
+

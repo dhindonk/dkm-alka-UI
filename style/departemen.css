@@ -1,8 +1,10 @@
 .departemen {
-    background: transparent;
+    /* background: #219855; */
+    /* background: transparent; */
     height: auto;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding-top: 50px;
+    transition: .5s;
 }
 
 .timeline {
@@ -22,7 +24,6 @@
 
 .text-box {
     padding: 20px 30px;
-    background: #fff;
     position: relative;
     border-radius: 6px;
     font-style: 15px;
@@ -43,7 +44,7 @@
     border-radius: 50%;
     right: -20px;
     top: 32px;
-    z-index: 10;
+    z-index: 10000;
 }
 
 .right-container img {

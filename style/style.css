@@ -6,11 +6,11 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #219855;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #47D486;
+    background-color: #219855;
     border-radius: 10px;
 }
 
@@ -19,7 +19,7 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
     scrollbar-width: thin;
-    scrollbar-color: #47D486 #ffffff;
+    scrollbar-color: #219855 #ffffff;
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
@@ -27,6 +27,7 @@
 body {
     cursor: none;
     height: 100vh;
+    /* background: #f8f9fa; */
     transition: background .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -35,7 +36,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background: #219855;
+    background: #219855 ;
     height: 100vh;
     width: 100%;
     z-index: 1000;

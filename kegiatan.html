@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kegiatan Ldk Dkm Al-Kautsar</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/navbar_kegiatan.css">
     <link rel="stylesheet" href="style/kegiatan.css">
     <link rel="stylesheet" href="style/departemen.css">
     <link rel="stylesheet" href="style/contact.css">
     <link rel="stylesheet" href="style/footer.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 
 <body>
@@ -20,44 +19,152 @@
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
 
-    <!--  -->
     <div id='splash'>
         <img alt='' class='logo' src='assets/images/salam.png' />
     </div>
 
-
-    <section class="bodyContainer-kegiatan container-fluid">
-
-        <div class="navbar_custom">
-            <div class="imgBox">
-                <div class="img">
-                    <img src="assets/logo/dkm.png">
-                </div>
-                <span>LDK DKM Al-Kautsar</span>
+    <div class="navbar_custom">
+        <div class="imgBox">
+            <div class="img">
+                <img src="assets/logo/dkm.png">
             </div>
-            <div class="navLinks">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#departemen">Departemen</a>
-                </li>
-                <li>
-                    <a href="#contact-us">Hubungi Kami</a>
-                </li>
-                <li>
-                    <a href="#">Tentang Kami</a>
-                </li>
-                <li>
-                    <a href="#">Kegiatan</a>
-                </li>
-            </div>
+            <span>LDK DKM Al-Kautsar</span>
         </div>
-    </section>
-    <div class="departemen" id="departemen">
-
+        <div class="navLinks">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#search">Semua Kegiatan</a>
+            </li>
+            <li>
+                <a href="about.html">Tentang Kami</a>
+            </li>
+        </div>
     </div>
 
+    <!--  -->
+    <div class="headerBody">
+        <div class="headerTextBox">
+            <h1>Ayo Daftar Kegiatan di Kaderisasi DKM Alkautsar Unpak</h1>
+            <br>
+            <p>Kegiatan di kaderisasi al kautsar merupakan kegiatan yang diperuntukan untuk aktivis yang terdaftar menjadi kader alka. Kegiatan meliputi kaderisasi, pelatihan, keasramaan lain-lain.</p>
+        </div>
+        <div class="searchBody" id="search">
+            <div class="inputForm">
+                <input type="search" name="search" placeholder="Cari Kegiatan...">
+            </div>
+            <div class="iconSearch">
+                <input type="submit" value="Cari">
+            </div>
+        </div>
+    </div>
+    <div id="kegiatanBody" class="kegiatanBody">
+        <div class="kegiatanCardBody">
+            <a href="details.html">
+                <div class="boxCard">
+                    <div class="imgBoxCard">
+                        <img src="assets/images/bg1.jpg" alt="">
+                    </div>
+                    <div class="teksBoxCard">
+                        <span>Bootcamp Prestatif PKM: Kupas Tuntas, Strategi dan Tantangan Lolos PIMNAS</span>
+                        <span>Buka</span>
+                        <span>Untuk Jamaah</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="details.html">
+                <div class="boxCard">
+                    <div class="imgBoxCard">
+                        <img src="assets/images/bg1.jpg" alt="">
+                    </div>
+                    <div class="teksBoxCard">
+                        <span>Bootcamp Prestatif PKM: Kupas Tuntas, Strategi dan Tantangan Lolos PIMNAS</span>
+                        <span style="color: red;">Tutup</span>
+                        <span>Untuk Jamaah</span>
+                    </div>
+                </div>
+            </a>
+
+
+        </div>
+    </div>
+    <div class="distance">
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(33, 152, 85, 0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(33, 152, 85, 0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(33, 152, 85, 0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(33, 152, 85, 1)" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="bgFoot">
+            <img src="assets/images/wave.png">
+        </div>
+        <div class="footLinks">
+            <ul>Departemen
+                <li><a aria-disabled="true">Kaderisasi</a></li>
+                <li><a aria-disabled="true">Asistensi</a></li>
+                <li><a aria-disabled="true">Informasi & Komunikasi</a></li>
+                <li><a aria-disabled="true">Bisnis dan Kemitraan</a></li>
+                <li><a aria-disabled="true">Riset dan Isu Keumatan</a></li>
+                <li><a aria-disabled="true">Keputrian</a></li>
+                <li><a aria-disabled="true">Syiar Kreatif</a></li>
+            </ul>
+            <ul>Kontak
+                <li><a target="_blank" href="mailto:unpakalka@gmail.com"><i class='bx bxs-envelope bx-flashing'></i>
+                        unpakalka@gmail.com</a></li>
+                <li><a target="_blank"
+                        href="https://wa.me/+6285179588928?text=Assalamu'alaikum+Warahmatullahi+Wabarakatuh"><i
+                            class='bx bxl-whatsapp bx-flashing'></i> +62 8517-9588-928</a></li>
+            </ul>
+            <ul>Alamat
+                <li><a target="_blank" href="https://maps.app.goo.gl/YMfm4WJpVxcHSLMP6"><i
+                            class='bx bxs-map bx-flashing'></i> Jl. Pakuan No.38, RT.02/RW.06, Tegallega, Kecamatan
+                        Bogor Tengah, Kota Bogor, Jawa Barat 16129</a></li>
+            </ul>
+        </div>
+        <div class="sosmedLinks">
+            <div class="logoFooter">
+                <img src="assets/logo/dkm.png">
+            </div>
+            <div class="boxSosmedFooter">
+                <li>
+                    <a target="_blank"
+                        href="https://m.facebook.com/p/DKM-Alkautsar-Unpak-100064404773551/?locale=id_ID"><i
+                            class='bx bxl-facebook-circle'></i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://youtube.com/@dkmal-kautsaruniversitaspa5320?si=BYbKk2-f1Yt0KQJp"><i
+                            class='bx bxl-youtube'></i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/alkaunpak_official?igsh=YTNqYTE1MjEzeW1k"><i
+                            class='bx bxl-instagram-alt'></i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.tiktok.com/@alkautsarunpak"><i class='bx bxl-tiktok'></i></a>
+                </li>
+            </div>
+            <span>
+                © 2024 Hamba Allah, all rights reserved. Made with ❤️ for a better web.
+            </span>
+        </div>
+
+    </footer>
     <script src="js/script.js"></script>
 </body>
 
