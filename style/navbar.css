@@ -75,9 +75,10 @@
     transform: translateY(-5px);
 }
 
-.kegiatanBoxLink
-{
+.kegiatanBoxLink {
     border-radius: 5px;
     padding: 5px;
     transition: .5s;
+    border: 2px solid #fff;
+    background: #ffae0c;
 }

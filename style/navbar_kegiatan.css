@@ -76,3 +76,11 @@
 .navLinks li:hover {
     transform: translateY(-5px);
 }
+
+.kegiatanBoxLink
+{
+    border-radius: 5px;
+    padding: 5px;
+    transition: .5s;
+    border: 2px solid #219855;
+}
