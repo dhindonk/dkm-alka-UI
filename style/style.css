@@ -27,7 +27,6 @@
 body {
     cursor: none;
     height: 100vh;
-    /* background: #f8f9fa; */
     transition: background .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 

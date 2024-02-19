@@ -1,5 +1,5 @@
 .navbar_custom {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     z-index: 100;
@@ -8,7 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     transition: .3s ease-in;
@@ -16,9 +17,8 @@
 
 .imgBox {
     position: relative;
-    width: calc(100% - 70%);
+    width: 100%;
     height: 100%;
-    /* background: #333; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,8 +35,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    -webkit-filter: brightness(0%) invert();
-    filter: brightness(0%) invert();
+    /* -webkit-filter: brightness(0%) invert();
+    filter: brightness(0%) invert(); */
     opacity: 1;
     transition: .5s;
 }
@@ -46,16 +46,17 @@
     font-weight: 600;
     font-size: 1.1em;
     transition: .5s;
-    color: white;
+    /* color: white; */
+    color: #333;
 }
 
 .navLinks {
-    width: calc(100% - 30%);
+    width: 100%;
     height: 100%;
-    /* background: coral; */
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
 .navLinks li {
@@ -81,4 +82,17 @@
     transition: .5s;
     border: 2px solid #fff;
     background: #ffae0c;
+}
+
+@media screen and (max-width: 600px){
+    .navbar_custom
+    {
+        background: #000 !important;
+        
+    }
+}
+
+.navbar-nav li a
+{
+    color: #ccc;
 }
